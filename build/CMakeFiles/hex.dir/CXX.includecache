@@ -6,33 +6,59 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/lonovo/Desktop/CAD/1.17/hex/inc/cell_type12.h
+/mnt/c/Users/lonovo/desktop/cad/1.17/hex/inc/cell_type12.h
 string
 -
 vector
 -
 
-/mnt/c/Users/lonovo/Desktop/CAD/1.17/hex/inc/vtk.h
+/mnt/c/Users/lonovo/desktop/cad/1.17/hex/inc/sid.hpp
+stdio.h
+-
+algorithm
+-
+string
+-
+vector
+-
+fstream
+-
+iostream
+-
+vector
+-
+string
+-
+algorithm
+-
+numeric
+-
+sid.hpp
+/mnt/c/Users/lonovo/desktop/cad/1.17/hex/inc/sid.hpp
+
+/mnt/c/Users/lonovo/desktop/cad/1.17/hex/inc/vtk.h
 string
 -
 vector
 -
 ../inc/cell_type12.h
-/mnt/c/Users/lonovo/Desktop/CAD/1.17/hex/inc/cell_type12.h
+/mnt/c/Users/lonovo/desktop/cad/1.17/hex/inc/cell_type12.h
 
-/mnt/c/Users/lonovo/Desktop/CAD/1.17/hex/src/cell.cpp
+/mnt/c/Users/lonovo/desktop/cad/1.17/hex/src/cell.cpp
 math.h
 -
 ../inc/cell_type12.h
-/mnt/c/Users/lonovo/Desktop/CAD/1.17/hex/inc/cell_type12.h
+/mnt/c/Users/lonovo/desktop/cad/1.17/hex/inc/cell_type12.h
 
-/mnt/c/Users/lonovo/Desktop/CAD/1.17/hex/src/main.cpp
+/mnt/c/Users/lonovo/desktop/cad/1.17/hex/src/main.cpp
 iostream
 -
+../inc/sid.hpp
+/mnt/c/Users/lonovo/desktop/cad/1.17/hex/inc/sid.hpp
 ../inc/vtk.h
-/mnt/c/Users/lonovo/Desktop/CAD/1.17/hex/inc/vtk.h
+/mnt/c/Users/lonovo/desktop/cad/1.17/hex/inc/vtk.h
 
-/mnt/c/Users/lonovo/Desktop/CAD/1.17/hex/src/vtk.cpp
+/mnt/c/Users/lonovo/desktop/cad/1.17/hex/src/vtk.cpp
 string
 -
 fstream
@@ -42,5 +68,5 @@ sstream
 iostream
 -
 ../inc/vtk.h
-/mnt/c/Users/lonovo/Desktop/CAD/1.17/hex/inc/vtk.h
+/mnt/c/Users/lonovo/desktop/cad/1.17/hex/inc/vtk.h
 

@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/hex.dir/src/cell.cpp.o CMakeFiles/hex.dir/src/main.cpp.o CMakeFiles/hex.dir/src/vtk.cpp.o  -o ../bin/hex 
+/usr/bin/c++     CMakeFiles/hex.dir/src/cell.cpp.o CMakeFiles/hex.dir/src/main.cpp.o CMakeFiles/hex.dir/src/vtk.cpp.o  -o ../bin/hex  -L/mnt/c/Users/lonovo/desktop/cad/1.17/hex/lib -Wl,-rpath,/mnt/c/Users/lonovo/desktop/cad/1.17/hex/lib -lsid 

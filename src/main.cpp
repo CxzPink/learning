@@ -1,4 +1,5 @@
 #include<iostream>
+#include"../inc/sid.hpp"
 #include"../inc/vtk.h"
 
 int main(int argc, char* argv[])
@@ -11,4 +12,5 @@ int main(int argc, char* argv[])
 	else {
 		vtk.ScaledJacobian();
 	}
+	test();
 }

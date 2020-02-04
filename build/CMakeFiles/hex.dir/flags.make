@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/mnt/c/Users/lonovo/Desktop/CAD/1.17/hex/inc 
+CXX_INCLUDES = -I/mnt/c/Users/lonovo/desktop/cad/1.17/hex/inc 
 
