@@ -4,9 +4,11 @@
 CMakeFiles/hex.dir/src/cell.cpp.o: ../inc/cell_type12.h
 CMakeFiles/hex.dir/src/cell.cpp.o: ../src/cell.cpp
 
-CMakeFiles/hex.dir/src/main.cpp.o: ../inc/cell_type12.h
+CMakeFiles/hex.dir/src/cxz.cpp.o: ../inc/cxz.h
+CMakeFiles/hex.dir/src/cxz.cpp.o: ../src/cxz.cpp
+
+CMakeFiles/hex.dir/src/main.cpp.o: ../inc/cxz.h
 CMakeFiles/hex.dir/src/main.cpp.o: ../inc/sid.hpp
-CMakeFiles/hex.dir/src/main.cpp.o: ../inc/vtk.h
 CMakeFiles/hex.dir/src/main.cpp.o: ../src/main.cpp
 
 CMakeFiles/hex.dir/src/vtk.cpp.o: ../inc/cell_type12.h

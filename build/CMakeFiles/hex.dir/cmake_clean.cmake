@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/hex.dir/src/cell.cpp.o"
+  "CMakeFiles/hex.dir/src/cxz.cpp.o"
   "CMakeFiles/hex.dir/src/main.cpp.o"
   "CMakeFiles/hex.dir/src/vtk.cpp.o"
   "../bin/hex.pdb"

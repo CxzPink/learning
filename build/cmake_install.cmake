@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/lonovo/desktop/cad/1.17/hex
+# Install script for directory: /mnt/c/users/lonovo/desktop/cad/1.17/hex
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/c/Users/lonovo/desktop/cad/1.17/hex/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/c/users/lonovo/desktop/cad/1.17/hex/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

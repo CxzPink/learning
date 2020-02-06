@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/lonovo/desktop/cad/1.17/hex
+CMAKE_SOURCE_DIR = /mnt/c/users/lonovo/desktop/cad/1.17/hex
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/lonovo/desktop/cad/1.17/hex/build
+CMAKE_BINARY_DIR = /mnt/c/users/lonovo/desktop/cad/1.17/hex/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/lonovo/desktop/cad/1.17/hex/build/CMakeFiles /mnt/c/Users/lonovo/desktop/cad/1.17/hex/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/users/lonovo/desktop/cad/1.17/hex/build/CMakeFiles /mnt/c/users/lonovo/desktop/cad/1.17/hex/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/lonovo/desktop/cad/1.17/hex/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/users/lonovo/desktop/cad/1.17/hex/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -150,6 +150,33 @@ src/cell.cpp.s:
 	$(MAKE) -f CMakeFiles/hex.dir/build.make CMakeFiles/hex.dir/src/cell.cpp.s
 .PHONY : src/cell.cpp.s
 
+src/cxz.o: src/cxz.cpp.o
+
+.PHONY : src/cxz.o
+
+# target to build an object file
+src/cxz.cpp.o:
+	$(MAKE) -f CMakeFiles/hex.dir/build.make CMakeFiles/hex.dir/src/cxz.cpp.o
+.PHONY : src/cxz.cpp.o
+
+src/cxz.i: src/cxz.cpp.i
+
+.PHONY : src/cxz.i
+
+# target to preprocess a source file
+src/cxz.cpp.i:
+	$(MAKE) -f CMakeFiles/hex.dir/build.make CMakeFiles/hex.dir/src/cxz.cpp.i
+.PHONY : src/cxz.cpp.i
+
+src/cxz.s: src/cxz.cpp.s
+
+.PHONY : src/cxz.s
+
+# target to generate assembly for a file
+src/cxz.cpp.s:
+	$(MAKE) -f CMakeFiles/hex.dir/build.make CMakeFiles/hex.dir/src/cxz.cpp.s
+.PHONY : src/cxz.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -216,6 +243,9 @@ help:
 	@echo "... src/cell.o"
 	@echo "... src/cell.i"
 	@echo "... src/cell.s"
+	@echo "... src/cxz.o"
+	@echo "... src/cxz.i"
+	@echo "... src/cxz.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
