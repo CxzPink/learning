@@ -22,11 +22,13 @@ int main(int argc, char* argv[]) {
 	std::vector<std::size_t> cells;
 	std::vector<std::size_t> cell_types;
 
-	cxz::io::read_vtk(points, cells, cell_types, file_path);
+//	cxz::io::read_vtk(points, cells, cell_types, file_path);
+    sid::io::read_vtk(points, cells, cell_types, file_path);
 
 	//step 4
 	std::vector<double> sj;
 	cxz::hex_scaled_jacobian_hex(sj, points, cells, cell_types);
+//  sid::hex_scaled_jacobian_hex(sj, points, cells, cell_types);
 
 	double min_sj = *std::min_element(sj.begin(), sj.end());
 	double sum_sj = std::accumulate(sj.begin(), sj.end(), 0.0);

@@ -1,3 +1,4 @@
+#include<math.h>
 #include"../inc/cxz.h"
 using namespace std;
 
@@ -83,28 +84,29 @@ int cxz::hex_scaled_jacobian_hex(
 	Vect temp_vect;
 	std::size_t cell_numebr = cell_types.size();
 	double temp_length;
-	double piece_quality, sum;
+	double temp_quality,smallest_quality;
 
 	for (std::size_t k = 0; k < cell_numebr; k++) {
 		if (cell_types[k] != 12) {
 			return 1;
 		}
 
-		sum = 0;
+		smallest_quality = 1;
 		for (size_t i = 0; i < 8; i++) {
 			for (size_t j = 1; j < 4; j++) {
-				temp_vect.x = points[(9 * k + 1 + operations_order[i][j]) * 3] - points[(9 * k + 1 + operations_order[i][0]]) * 3];
-				temp_vect.y = points[(9 * k + 1 + operations_order[i][j]) * 3 + 1] - points[(9 * k + 1 + operations_order[i][0]]) * 3 + 1];
-				temp_vect.z = points[(9 * k + 1 + operations_order[i][j]) * 3 + 2] - points[(9 * k + 1 + operations_order[i][0]]) * 3 + 2];
+				temp_vect.x = points[cells[(9 * k + 1 + operations_order[i][j])] * 3] - points[cells[(9 * k + 1 + operations_order[i][0])] * 3];
+				temp_vect.y = points[cells[(9 * k + 1 + operations_order[i][j])] * 3 + 1] - points[cells[(9 * k + 1 + operations_order[i][0])] * 3 + 1];
+				temp_vect.z = points[cells[(9 * k + 1 + operations_order[i][j])] * 3 + 2] - points[cells[(9 * k + 1 + operations_order[i][0])] * 3 + 2];
 				temp_length = pow(temp_vect.x*temp_vect.x + temp_vect.y*temp_vect.y + temp_vect.z*temp_vect.z, 0.5);
 				vect[j - 1].x = temp_vect.x / temp_length;
 				vect[j - 1].y = temp_vect.y / temp_length;
 				vect[j - 1].z = temp_vect.z / temp_length;
 			}
-			piece_quality = ComputeCrossProduct(vect);
-			sum = sum + piece_quality;
+			temp_quality = ComputeCrossProduct(vect);
+			if (smallest_quality > temp_quality)
+				smallest_quality = temp_quality;
 		}
-		sj.push_back(sum / 8);
+		sj.push_back(smallest_quality);
 	}
 
 	return 0;
