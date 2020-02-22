@@ -69,8 +69,8 @@ namespace cxz {
 
 			return (temp.x*vect[2].x + temp.y*vect[2].y + temp.z*vect[2].z);
 		};
-	}
-}
+	};
+};
 
 int cxz::hex_scaled_jacobian_hex(
 	std::vector<double>& sj,
